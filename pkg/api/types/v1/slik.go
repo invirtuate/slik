@@ -5,8 +5,8 @@ import (
 )
 
 // to generate...
-// 1. install: go install sigs.k8s.io/controller-tools/cmd/controller-gen@latest
-// 2a. generate: controller-gen object paths=./pkg/api/types/v1/slik.go
+// 1. install: go install sigs.k8s.io/controller-tools/cmd/controller-gen@v0.21.0
+// 2a. generate: controller-gen object paths=./pkg/api/types/v1
 // 2b. or: go generate ./...
 
 //go:generate controller-gen object paths=$GOFILE
