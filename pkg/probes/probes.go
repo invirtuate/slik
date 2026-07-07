@@ -67,7 +67,11 @@ func NewProbesAPI(name, listen string, port uint16) (*ProbesAPI, error) {
 
 // Start starts the server
 func (p *ProbesAPI) Start() error {
-	return p.app.Listen(fmt.Sprintf("%s:%d", p.Listen, p.Port), fiber.ListenConfig{EnablePrefork: false, DisableStartupMessage: true, EnablePrintRoutes: false})
+	return p.app.Listen(fmt.Sprintf("%s:%d", p.Listen, p.Port), fiber.ListenConfig{
+		EnablePrefork:         false,
+		DisableStartupMessage: true,
+		EnablePrintRoutes:     false,
+	})
 }
 
 // Shutdown shuts down the server
