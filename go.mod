@@ -4,7 +4,7 @@ go 1.26.0
 
 require (
 	github.com/ansrivas/fiberprometheus/v2 v2.6.1
-	github.com/gofiber/fiber/v2 v2.52.13
+	github.com/gofiber/fiber/v2 v2.52.14
 	github.com/prometheus/client_golang v1.23.2
 	go.uber.org/zap v1.28.0
 	golang.org/x/crypto v0.53.0
