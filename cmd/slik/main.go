@@ -5,11 +5,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/vultr/slik/cmd/slik/config"
-	"github.com/vultr/slik/cmd/slik/metrics"
-	"github.com/vultr/slik/pkg/helpers"
-	"github.com/vultr/slik/pkg/probes"
-	"github.com/vultr/slik/pkg/reconciler"
+	"codeberg.org/invirtuate/slik/cmd/slik/config"
+	"codeberg.org/invirtuate/slik/cmd/slik/metrics"
+	"codeberg.org/invirtuate/slik/pkg/helpers"
+	"codeberg.org/invirtuate/slik/pkg/probes"
+	"codeberg.org/invirtuate/slik/pkg/reconciler"
 
 	"go.uber.org/zap"
 	"golang.org/x/sync/errgroup"

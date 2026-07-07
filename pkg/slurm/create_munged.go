@@ -5,9 +5,9 @@ import (
 	b64 "encoding/base64"
 	"fmt"
 
-	"github.com/vultr/slik/cmd/slik/config"
-	v1s "github.com/vultr/slik/pkg/api/types/v1"
-	"github.com/vultr/slik/pkg/munge"
+	"codeberg.org/invirtuate/slik/cmd/slik/config"
+	v1s "codeberg.org/invirtuate/slik/pkg/api/types/v1"
+	"codeberg.org/invirtuate/slik/pkg/munge"
 
 	"go.uber.org/zap"
 	v1 "k8s.io/api/core/v1"

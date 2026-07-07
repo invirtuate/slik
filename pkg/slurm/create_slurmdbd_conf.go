@@ -7,7 +7,7 @@ import (
 	"html/template"
 	"strings"
 
-	v1s "github.com/vultr/slik/pkg/api/types/v1"
+	v1s "codeberg.org/invirtuate/slik/pkg/api/types/v1"
 
 	"go.uber.org/zap"
 	v1 "k8s.io/api/core/v1"

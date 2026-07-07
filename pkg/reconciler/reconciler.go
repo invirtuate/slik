@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	v1s "github.com/vultr/slik/pkg/api/types/v1"
-	"github.com/vultr/slik/pkg/connectors"
-	"github.com/vultr/slik/pkg/slurm"
+	v1s "codeberg.org/invirtuate/slik/pkg/api/types/v1"
+	"codeberg.org/invirtuate/slik/pkg/connectors"
+	"codeberg.org/invirtuate/slik/pkg/slurm"
 
 	"go.uber.org/zap"
 	"k8s.io/apimachinery/pkg/api/errors"

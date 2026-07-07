@@ -1,6 +1,6 @@
-module github.com/vultr/slik
+module codeberg.org/invirtuate/slik
 
-go 1.26.0
+go 1.26.4
 
 require (
 	codeberg.org/invirtuate/fiberprometheus/v3 v3.0.0-20260707195331-4479ac011f8a

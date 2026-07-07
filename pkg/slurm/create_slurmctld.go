@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/vultr/slik/cmd/slik/config"
-	v1s "github.com/vultr/slik/pkg/api/types/v1"
+	"codeberg.org/invirtuate/slik/cmd/slik/config"
+	v1s "codeberg.org/invirtuate/slik/pkg/api/types/v1"
 
 	"go.uber.org/zap"
 	appsv1 "k8s.io/api/apps/v1"

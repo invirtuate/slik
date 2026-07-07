@@ -6,10 +6,10 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/vultr/slik/cmd/slurmabler/config"
-	"github.com/vultr/slik/pkg/connectors"
-	"github.com/vultr/slik/pkg/labeler"
-	"github.com/vultr/slik/pkg/slurm"
+	"codeberg.org/invirtuate/slik/cmd/slurmabler/config"
+	"codeberg.org/invirtuate/slik/pkg/connectors"
+	"codeberg.org/invirtuate/slik/pkg/labeler"
+	"codeberg.org/invirtuate/slik/pkg/slurm"
 
 	"go.uber.org/zap"
 )
