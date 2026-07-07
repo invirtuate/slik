@@ -3,8 +3,8 @@ module github.com/vultr/slik
 go 1.26.0
 
 require (
+	codeberg.org/invirtuate/fiberprometheus/v3 v3.0.0-20260707195331-4479ac011f8a
 	github.com/gofiber/fiber/v3 v3.4.0
-	github.com/nwcs-sh/fiberprometheus/v3 v3.0.0
 	github.com/prometheus/client_golang v1.23.2
 	go.uber.org/zap v1.28.0
 	golang.org/x/crypto v0.53.0
