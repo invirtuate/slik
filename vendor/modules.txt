@@ -1,10 +1,8 @@
-# github.com/andybalholm/brotli v1.1.0
-## explicit; go 1.13
+# github.com/andybalholm/brotli v1.2.2
+## explicit; go 1.22
 github.com/andybalholm/brotli
+github.com/andybalholm/brotli/flate
 github.com/andybalholm/brotli/matchfinder
-# github.com/ansrivas/fiberprometheus/v2 v2.6.1
-## explicit; go 1.18
-github.com/ansrivas/fiberprometheus/v2
 # github.com/beorn7/perks v1.0.1
 ## explicit; go 1.11
 github.com/beorn7/perks/quantile
@@ -18,7 +16,7 @@ github.com/davecgh/go-spew/spew
 ## explicit; go 1.13
 github.com/emicklei/go-restful/v3
 github.com/emicklei/go-restful/v3/log
-# github.com/fxamacker/cbor/v2 v2.9.0
+# github.com/fxamacker/cbor/v2 v2.9.2
 ## explicit; go 1.20
 github.com/fxamacker/cbor/v2
 # github.com/go-logr/logr v1.4.3
@@ -34,15 +32,26 @@ github.com/go-openapi/jsonreference/internal
 # github.com/go-openapi/swag v0.23.0
 ## explicit; go 1.20
 github.com/go-openapi/swag
-# github.com/gofiber/adaptor/v2 v2.2.1
-## explicit; go 1.17
-github.com/gofiber/adaptor/v2
-# github.com/gofiber/fiber/v2 v2.52.14
-## explicit; go 1.20
-github.com/gofiber/fiber/v2
-github.com/gofiber/fiber/v2/internal/schema
-github.com/gofiber/fiber/v2/log
-github.com/gofiber/fiber/v2/utils
+# github.com/gofiber/fiber/v3 v3.4.0
+## explicit; go 1.25.0
+github.com/gofiber/fiber/v3
+github.com/gofiber/fiber/v3/binder
+github.com/gofiber/fiber/v3/internal/contextvalue
+github.com/gofiber/fiber/v3/internal/logtemplate
+github.com/gofiber/fiber/v3/internal/nilerror
+github.com/gofiber/fiber/v3/internal/schemehost
+github.com/gofiber/fiber/v3/log
+github.com/gofiber/fiber/v3/middleware/adaptor
+# github.com/gofiber/schema v1.8.0
+## explicit; go 1.25.0
+github.com/gofiber/schema
+# github.com/gofiber/utils/v2 v2.1.1
+## explicit; go 1.25.0
+github.com/gofiber/utils/v2
+github.com/gofiber/utils/v2/bytes
+github.com/gofiber/utils/v2/internal/caseconv
+github.com/gofiber/utils/v2/internal/unsafeconv
+github.com/gofiber/utils/v2/strings
 # github.com/google/gnostic-models v0.7.0
 ## explicit; go 1.22
 github.com/google/gnostic-models/compiler
@@ -59,26 +68,30 @@ github.com/josharian/intern
 # github.com/json-iterator/go v1.1.12
 ## explicit; go 1.12
 github.com/json-iterator/go
-# github.com/klauspost/compress v1.18.0
-## explicit; go 1.22
+# github.com/klauspost/compress v1.19.0
+## explicit; go 1.24
+github.com/klauspost/compress
 github.com/klauspost/compress/flate
+github.com/klauspost/compress/fse
 github.com/klauspost/compress/gzip
+github.com/klauspost/compress/huff0
+github.com/klauspost/compress/internal/cpuinfo
 github.com/klauspost/compress/internal/le
+github.com/klauspost/compress/internal/snapref
 github.com/klauspost/compress/zlib
+github.com/klauspost/compress/zstd
+github.com/klauspost/compress/zstd/internal/xxhash
 # github.com/mailru/easyjson v0.7.7
 ## explicit; go 1.12
 github.com/mailru/easyjson/buffer
 github.com/mailru/easyjson/jlexer
 github.com/mailru/easyjson/jwriter
-# github.com/mattn/go-colorable v0.1.13
-## explicit; go 1.15
+# github.com/mattn/go-colorable v0.1.15
+## explicit; go 1.18
 github.com/mattn/go-colorable
-# github.com/mattn/go-isatty v0.0.20
-## explicit; go 1.15
+# github.com/mattn/go-isatty v0.0.22
+## explicit; go 1.21
 github.com/mattn/go-isatty
-# github.com/mattn/go-runewidth v0.0.16
-## explicit; go 1.9
-github.com/mattn/go-runewidth
 # github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
 ## explicit
 github.com/modern-go/concurrent
@@ -88,6 +101,12 @@ github.com/modern-go/reflect2
 # github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822
 ## explicit
 github.com/munnerz/goautoneg
+# github.com/nwcs-sh/fiberprometheus/v3 v3.0.0
+## explicit; go 1.25.0
+github.com/nwcs-sh/fiberprometheus/v3
+# github.com/philhofer/fwd v1.2.0
+## explicit; go 1.20
+github.com/philhofer/fwd
 # github.com/prometheus/client_golang v1.23.2
 ## explicit; go 1.23.0
 github.com/prometheus/client_golang/internal/github.com/golang/gddo/httputil
@@ -109,25 +128,36 @@ github.com/prometheus/common/model
 github.com/prometheus/procfs
 github.com/prometheus/procfs/internal/fs
 github.com/prometheus/procfs/internal/util
-# github.com/rivo/uniseg v0.4.4
-## explicit; go 1.18
-github.com/rivo/uniseg
+# github.com/tinylib/msgp v1.6.4
+## explicit; go 1.24
+github.com/tinylib/msgp/msgp
 # github.com/valyala/bytebufferpool v1.0.0
 ## explicit
 github.com/valyala/bytebufferpool
-# github.com/valyala/fasthttp v1.51.0
-## explicit; go 1.20
+# github.com/valyala/fasthttp v1.72.0
+## explicit; go 1.25.0
 github.com/valyala/fasthttp
 github.com/valyala/fasthttp/fasthttpadaptor
 github.com/valyala/fasthttp/fasthttputil
+github.com/valyala/fasthttp/prefork
 github.com/valyala/fasthttp/reuseport
 github.com/valyala/fasthttp/stackless
-# github.com/valyala/tcplisten v1.0.0
-## explicit; go 1.12
-github.com/valyala/tcplisten
+github.com/valyala/fasthttp/tcplisten
 # github.com/x448/float16 v0.8.4
 ## explicit; go 1.11
 github.com/x448/float16
+# go.opentelemetry.io/otel v1.40.0
+## explicit; go 1.24.0
+go.opentelemetry.io/otel/attribute
+go.opentelemetry.io/otel/attribute/internal
+go.opentelemetry.io/otel/attribute/internal/xxhash
+go.opentelemetry.io/otel/codes
+go.opentelemetry.io/otel/semconv/v1.39.0
+# go.opentelemetry.io/otel/trace v1.40.0
+## explicit; go 1.24.0
+go.opentelemetry.io/otel/trace
+go.opentelemetry.io/otel/trace/embedded
+go.opentelemetry.io/otel/trace/internal/telemetry
 # go.uber.org/multierr v1.10.0
 ## explicit; go 1.19
 go.uber.org/multierr
@@ -150,8 +180,10 @@ go.yaml.in/yaml/v2
 go.yaml.in/yaml/v3
 # golang.org/x/crypto v0.53.0
 ## explicit; go 1.25.0
+golang.org/x/crypto/acme
+golang.org/x/crypto/acme/autocert
 golang.org/x/crypto/hkdf
-# golang.org/x/net v0.55.0
+# golang.org/x/net v0.56.0
 ## explicit; go 1.25.0
 golang.org/x/net/http/httpguts
 golang.org/x/net/http2
