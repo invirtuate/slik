@@ -122,7 +122,7 @@ func loop() error {
 				}
 
 				s2.ObjectMeta.Finalizers = []string{
-					"sliks.hpc.vultr.com",
+					"sliks.hpc.invirtuate.com",
 				}
 
 				if _, err := slurmcs.Slik(context.TODO()).Update(s2, v1.UpdateOptions{}); err != nil {

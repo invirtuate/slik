@@ -3,10 +3,10 @@
 ## Overview
 An operator to deploy slurm in kubernetes.
 
-Note: This project has been renamed from slinkee to slik; this was due to a name conflict.
-
 ## Usage
 Everything is public, including the slurm images. You do not need any auth or secret sauce to use this. If you intend to use in a different cloud platform you may need to make tweaks to the mariadb statefulset. If you intend to deploy slurm on arm you'll need to build arm images.
+
+You can test and play with this by spinning up a minikube cluster: `minikube start --cni=bridge`
 
 You can deploy slik into your kubernetes cluster simply with: `helm install -f helm/slik/values.yaml slik ./helm/slik/`
 
@@ -19,7 +19,7 @@ You then interact with the slurm cluster through the toolbox pod: `kubectl exec 
 Sample yaml:
 
 ```yaml
-apiVersion: "hpc.vultr.com/v1"
+apiVersion: "hpc.invirtuate.com/v1"
 kind: Slik
 metadata:
   name: full
@@ -29,7 +29,7 @@ spec:
   slurmrestd: true
   mariadb:
     storage_size: 50G
-    storage_class: vultr-block-storage-hdd-retain
+    storage_class: standard
 ```
 
 Update operations are not currently supported, you should rebuild the cluster instead. Delete the slurm deployment, then re-create it. If you use a PVC that is retained you should not lose any data.

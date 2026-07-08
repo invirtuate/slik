@@ -1,6 +1,6 @@
 slik:
-  repository: ewr.vultrcr.com/slurm/slik
-  tag: v0.0.1
+  repository: quay.io/invirtuate/slurm/slik
+  tag: latest-amd64
   resources:
     requests:
       memory: "1Gi"
@@ -16,19 +16,19 @@ slik:
 
 slurm:
   slurmabler:
-    image: "ewr.vultrcr.com/slurm/slurmabler:v0.0.1"
+    image: "quay.io/invirtuate/slurm/slurmabler:v0.0.0-amd64"
     service_account: "slik"
   munged:
-    image: "ewr.vultrcr.com/slurm/munged:v0.0.1"
+    image: "quay.io/invirtuate/slurm/munged:v0.0.0-amd64"
   slurmctld:
-    image: "ewr.vultrcr.com/slurm/slurmctld:v0.0.1"
+    image: "quay.io/invirtuate/slurm/slurmctld:v0.0.0-amd64"
   slurmd:
-    image: "ewr.vultrcr.com/slurm/slurmd:v0.0.1"
+    image: "quay.io/invirtuate/slurm/slurmd:v0.0.0-amd64"
   slurm_toolbox:
-    image: "ewr.vultrcr.com/slurm/toolbox:v0.0.1"
+    image: "quay.io/invirtuate/slurm/toolbox:v0.0.0-amd64"
   mariadb:
     image: "mariadb:11.4.2-noble"
   slurmdbd:
-    image: "ewr.vultrcr.com/slurm/slurmdbd:v0.0.1"
+    image: "quay.io/invirtuate/slurm/slurmdbd:v0.0.0-amd64"
   slurmrestd:
-    image: "ewr.vultrcr.com/slurm/slurmrestd:v0.0.1"
+    image: "quay.io/invirtuate/slurm/slurmrestd:v0.0.0-amd64"

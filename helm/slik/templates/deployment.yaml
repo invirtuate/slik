@@ -26,8 +26,6 @@ spec:
         prometheus.io/port: '{{ .Values.slik.probes_api.port }}'
     spec:
       serviceAccountName: slik
-      imagePullSecrets:
-      - name: vcr
       containers:
       - image: "{{ .Values.slik.repository }}:{{ .Values.slik.tag }}"
         name: slik

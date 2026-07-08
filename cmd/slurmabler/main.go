@@ -61,13 +61,13 @@ func main() { //nolint
 	}
 
 	labels := node.GetLabels()
-	labels["slik.vultr.com/nodename"] = labeler.NodeName
-	labels["slik.vultr.com/cpus"] = fmt.Sprintf("%d", labeler.CPUs)
-	labels["slik.vultr.com/boards"] = fmt.Sprintf("%d", labeler.Boards)
-	labels["slik.vultr.com/sockets_per_board"] = fmt.Sprintf("%d", labeler.SocketsPerBoard)
-	labels["slik.vultr.com/cores_per_socket"] = fmt.Sprintf("%d", labeler.CoresPerSocket)
-	labels["slik.vultr.com/threads_per_core"] = fmt.Sprintf("%d", labeler.ThreadsPerCore)
-	labels["slik.vultr.com/real_memory"] = fmt.Sprintf("%d", labeler.RealMemory)
+	labels["slik.invirtuate.com/nodename"] = labeler.NodeName
+	labels["slik.invirtuate.com/cpus"] = fmt.Sprintf("%d", labeler.CPUs)
+	labels["slik.invirtuate.com/boards"] = fmt.Sprintf("%d", labeler.Boards)
+	labels["slik.invirtuate.com/sockets_per_board"] = fmt.Sprintf("%d", labeler.SocketsPerBoard)
+	labels["slik.invirtuate.com/cores_per_socket"] = fmt.Sprintf("%d", labeler.CoresPerSocket)
+	labels["slik.invirtuate.com/threads_per_core"] = fmt.Sprintf("%d", labeler.ThreadsPerCore)
+	labels["slik.invirtuate.com/real_memory"] = fmt.Sprintf("%d", labeler.RealMemory)
 
 	node.Labels = labels
 

@@ -44,17 +44,17 @@ func NewSlurmConf(client kubernetes.Interface, wl *v1s.Slik) (*SlurmConf, error)
 	var conf SlurmConf
 	for i := range nodes.Items {
 		labels := nodes.Items[i].GetLabels()
-		cpusS, ok := labels["slik.vultr.com/cpus"]
+		cpusS, ok := labels["slik.invirtuate.com/cpus"]
 		if !ok {
 			continue
 		}
 
-		memoryS, ok := labels["slik.vultr.com/real_memory"]
+		memoryS, ok := labels["slik.invirtuate.com/real_memory"]
 		if !ok {
 			continue
 		}
 
-		threadsPerCoreS, ok := labels["slik.vultr.com/threads_per_core"]
+		threadsPerCoreS, ok := labels["slik.invirtuate.com/threads_per_core"]
 		if !ok {
 			continue
 		}

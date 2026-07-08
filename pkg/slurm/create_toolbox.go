@@ -136,7 +136,7 @@ func mkSlurmToolboxContainer(wl *v1s.Slik) *v1.Container {
 
 	c.Env = []v1.EnvVar{
 		{
-			Name:  "X_VULTR_SLURM_ID",
+			Name:  "X_SLURM_ID",
 			Value: wl.Name,
 		},
 	}

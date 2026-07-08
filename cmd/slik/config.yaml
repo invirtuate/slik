@@ -8,19 +8,19 @@ probes_api:
   port: 9093
 slurm:
   slurmabler:
-    image: "ewr.vultrcr.com/slurm/slurmabler:v0.0.120"
+    image: "quay.io/invirtuate/slurm/slurmabler:v0.0.120"
     service_account: "slik"
   munged:
-    image: "ewr.vultrcr.com/slurm/munged:v0.0.120"
+    image: "quay.io/invirtuate/slurm/munged:v0.0.120"
   slurmctld:
-    image: "ewr.vultrcr.com/slurm/slurmctld:v0.0.120"
+    image: "quay.io/invirtuate/slurm/slurmctld:v0.0.120"
   slurmd:
-    image: "ewr.vultrcr.com/slurm/slurmd:v0.0.120"
+    image: "quay.io/invirtuate/slurm/slurmd:v0.0.120"
   slurm_toolbox:
-    image: "ewr.vultrcr.com/slurm/toolbox:v0.0.120"
+    image: "quay.io/invirtuate/slurm/toolbox:v0.0.120"
   mariadb:
     image: 11.4.2-noble
   slurmdbd:
-    image: "ewr.vultrcr.com/slurm/slurmdbd:v0.0.120"
+    image: "quay.io/invirtuate/slurm/slurmdbd:v0.0.120"
   slurmrestd:
-    image: "ewr.vultrcr.com/slurm/slurmrestd:v0.0.120"
+    image: "quay.io/invirtuate/slurm/slurmrestd:v0.0.120"

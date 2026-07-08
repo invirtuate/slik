@@ -95,7 +95,7 @@ func buildSlurmablerDaemonSet(client kubernetes.Interface, wl *v1s.Slik) error {
 
 			labels := nodes.Items[i].GetLabels()
 
-			_, ok := labels["slik.vultr.com/real_memory"]
+			_, ok := labels["slik.invirtuate.com/real_memory"]
 			if ok {
 				lablesSet++
 			}
@@ -126,7 +126,7 @@ func mkSlurmablerContainer(wl *v1s.Slik) *v1.Container {
 
 	c.Env = []v1.EnvVar{
 		{
-			Name:  "X_VULTR_SLURM_ID",
+			Name:  "X_SLURM_ID",
 			Value: wl.Name,
 		},
 		{
