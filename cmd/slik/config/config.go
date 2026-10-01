@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"net"
 	"os"
+	"time"
 
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
@@ -192,9 +193,11 @@ func initLogging(logfile string, stdout bool) error { //nolint
 			StacktraceKey:  "stack",
 			LineEnding:     zapcore.DefaultLineEnding,
 			EncodeLevel:    zapcore.CapitalLevelEncoder,
-			EncodeTime:     zapcore.ISO8601TimeEncoder,
 			EncodeDuration: zapcore.StringDurationEncoder,
 			EncodeCaller:   zapcore.ShortCallerEncoder,
+			EncodeTime: zapcore.TimeEncoder(func(t time.Time, enc zapcore.PrimitiveArrayEncoder) {
+				enc.AppendString(t.UTC().Format(time.RFC3339Nano))
+			}),
 		},
 	}
 

@@ -115,7 +115,7 @@ func main() { //nolint
 	var delta time.Duration
 	g.Go(func() error {
 		<-gCtx.Done()
-		start = time.Now()
+		start = time.Now().UTC()
 
 		probe.Failed()
 
